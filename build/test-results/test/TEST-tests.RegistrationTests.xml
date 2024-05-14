@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Registration tests" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-05-14T17:51:02" hostname="2202DR000110" time="0.445">
+  <properties/>
+  <testcase name="Registration without password check" classname="tests.RegistrationTests" time="0.219"/>
+  <testcase name="Successful registration check" classname="tests.RegistrationTests" time="0.222"/>
+  <system-out><![CDATA[Request URI:	https://reqres.in/api/register
+Body:
+{
+    "email": "eve.holt@reqres.in",
+    "password": null
+}
+Headers:		Accept=*/*
+				Content-Type=application/json
+{
+    "error": "Missing password"
+}
+Request URI:	https://reqres.in/api/register
+Body:
+{
+    "email": "eve.holt@reqres.in",
+    "password": "pistol"
+}
+Headers:		Accept=*/*
+				Content-Type=application/json
+{
+    "id": 4,
+    "token": "QpwL5tke4Pnpja7X4"
+}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

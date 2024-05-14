@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Login tests" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-05-14T17:51:02" hostname="2202DR000110" time="0.448">
+  <properties/>
+  <testcase name="Successful login check" classname="tests.LoginTests" time="0.223"/>
+  <testcase name="Login without password check" classname="tests.LoginTests" time="0.221"/>
+  <system-out><![CDATA[Request URI:	https://reqres.in/api/login
+Body:
+{
+    "email": "eve.holt@reqres.in",
+    "password": "cityslicka"
+}
+Headers:		Accept=*/*
+				Content-Type=application/json
+{
+    "token": "QpwL5tke4Pnpja7X4"
+}
+Request URI:	https://reqres.in/api/register
+Body:
+{
+    "email": "peter@klaven",
+    "password": null
+}
+Headers:		Accept=*/*
+				Content-Type=application/json
+{
+    "error": "Missing password"
+}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
