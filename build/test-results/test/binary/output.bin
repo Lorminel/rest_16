@@ -1,232 +1,0 @@
-*Request URI:	https://reqres.in/api/users
-Body:
-{
-    "name": "morpheus",
-    "job": "leader"
-}
-Headers:		Accept=*/*
-#				Content-Type=application/json
-{
-    "name": "morpheus",
-    "job": "leader",
-    "id": "394",
-,    "createdAt": "2024-05-14T17:51:01.677Z"
-}
-,Request URI:	https://reqres.in/api/users/5
-Body:			<none>
-Headers:		Accept=*/*
-#				Content-Type=application/json
-
-*Request URI:	https://reqres.in/api/login
-Body:
-{
-#    "email": "eve.holt@reqres.in",
-    "password": "cityslicka"
-}
-Headers:		Accept=*/*
-#				Content-Type=application/json
-{
-!    "token": "QpwL5tke4Pnpja7X4"
-}
--Request URI:	https://reqres.in/api/register
-Body:
-{
-    "email": "peter@klaven",
-    "password": null
-}
-Headers:		Accept=*/*
-#				Content-Type=application/json
-{
-     "error": "Missing password"
-}
-	-Request URI:	https://reqres.in/api/register
-	Body:
-	{
-	#    "email": "eve.holt@reqres.in",
-	    "password": null
-	}
-	Headers:		Accept=*/*
-	#				Content-Type=application/json
-	{
-	     "error": "Missing password"
-	}
-	
--Request URI:	https://reqres.in/api/register
-	
-Body:
-	
-{
-	
-#    "email": "eve.holt@reqres.in",
-	
-    "password": "pistol"
-	
-}
-	
-Headers:		Accept=*/*
-	
-#				Content-Type=application/json
-	
-{
-	
-    "id": 4,
-	
-!    "token": "QpwL5tke4Pnpja7X4"
-	
-}
-,Request URI:	https://reqres.in/api/unknown
-Body:			<none>
-Headers:		Accept=*/*
-#				Content-Type=application/json
-{
-    "page": 1,
-    "per_page": 6,
-    "total": 12,
-    "total_pages": 2,
-    "data": [
-
-        {
-            "id": 1,
-             "name": "cerulean",
-            "year": 2000,
-             "color": "#98B2D1",
-'            "pantone_value": "15-4020"
-        },
-
-        {
-            "id": 2,
-$            "name": "fuchsia rose",
-            "year": 2001,
-             "color": "#C74375",
-'            "pantone_value": "17-2031"
-        },
-
-        {
-            "id": 3,
-             "name": "true red",
-            "year": 2002,
-             "color": "#BF1932",
-'            "pantone_value": "19-1664"
-        },
-
-        {
-            "id": 4,
-             "name": "aqua sky",
-            "year": 2003,
-             "color": "#7BC4C4",
-'            "pantone_value": "14-4811"
-        },
-
-        {
-            "id": 5,
-!            "name": "tigerlily",
-            "year": 2004,
-             "color": "#E2583E",
-'            "pantone_value": "17-1456"
-        },
-
-        {
-            "id": 6,
-&            "name": "blue turquoise",
-            "year": 2005,
-             "color": "#53B0AE",
-'            "pantone_value": "15-5217"
-
-        }
-    ],
-    "support": {
-5        "url": "https://reqres.in/#support-heading",
-[        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
-    }
-}
-,Request URI:	https://reqres.in/api/unknown
-Body:			<none>
-Headers:		Accept=*/*
-#				Content-Type=application/json
-{
-    "page": 1,
-    "per_page": 6,
-    "total": 12,
-    "total_pages": 2,
-    "data": [
-
-        {
-            "id": 1,
-             "name": "cerulean",
-            "year": 2000,
-             "color": "#98B2D1",
-'            "pantone_value": "15-4020"
-        },
-
-        {
-            "id": 2,
-$            "name": "fuchsia rose",
-            "year": 2001,
-             "color": "#C74375",
-'            "pantone_value": "17-2031"
-        },
-
-        {
-            "id": 3,
-             "name": "true red",
-            "year": 2002,
-             "color": "#BF1932",
-'            "pantone_value": "19-1664"
-        },
-
-        {
-            "id": 4,
-             "name": "aqua sky",
-            "year": 2003,
-             "color": "#7BC4C4",
-'            "pantone_value": "14-4811"
-        },
-
-        {
-            "id": 5,
-!            "name": "tigerlily",
-            "year": 2004,
-             "color": "#E2583E",
-'            "pantone_value": "17-1456"
-        },
-
-        {
-            "id": 6,
-&            "name": "blue turquoise",
-            "year": 2005,
-             "color": "#53B0AE",
-'            "pantone_value": "15-5217"
-
-        }
-    ],
-    "support": {
-5        "url": "https://reqres.in/#support-heading",
-[        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
-    }
-}
-,Request URI:	https://reqres.in/api/users/2
-Body:
-{
-    "name": "morpheus",
-    "job": "zion resident"
-}
-Headers:		Accept=*/*
-#				Content-Type=application/json
-{
-    "name": "morpheus",
-    "job": "zion resident",
-,    "updatedAt": "2024-05-14T17:51:03.829Z"
-}
-,Request URI:	https://reqres.in/api/users/2
-Body:
-{
-    "name": "morpheus",
-    "job": "zion resident"
-}
-Headers:		Accept=*/*
-#				Content-Type=application/json
-{
-    "name": "morpheus",
-    "job": "zion resident",
-,    "updatedAt": "2024-05-14T17:51:04.072Z"
-}
