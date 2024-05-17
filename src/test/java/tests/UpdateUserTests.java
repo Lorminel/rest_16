@@ -8,8 +8,8 @@ import org.junit.jupiter.api.Test;
 import static io.qameta.allure.Allure.step;
 import static io.restassured.RestAssured.given;
 import static org.assertj.core.api.Assertions.assertThat;
-import static specs.TestSpecs.code200ResponseSpec;
 import static specs.TestSpecs.requestSpecification;
+import static specs.TestSpecs.statusCodeResponseSpec;
 
 @DisplayName("Update user tests")
 public class UpdateUserTests extends TestBase {
@@ -29,7 +29,7 @@ public class UpdateUserTests extends TestBase {
                         .patch("users/{id}", 2)
 
                         .then()
-                        .spec(code200ResponseSpec)
+                        .spec(statusCodeResponseSpec(200))
                         .extract().as(UpdateUserResponseModel.class));
 
         step("Check response", () -> {
@@ -53,7 +53,7 @@ public class UpdateUserTests extends TestBase {
                         .put("users/{id}", 2)
 
                         .then()
-                        .spec(code200ResponseSpec)
+                        .spec(statusCodeResponseSpec(200))
                         .extract().as(UpdateUserResponseModel.class));
 
         step("Check response", () -> {

@@ -8,8 +8,8 @@ import org.junit.jupiter.api.Test;
 import static io.qameta.allure.Allure.step;
 import static io.restassured.RestAssured.given;
 import static org.assertj.core.api.Assertions.assertThat;
-import static specs.TestSpecs.code200ResponseSpec;
 import static specs.TestSpecs.requestSpecification;
+import static specs.TestSpecs.statusCodeResponseSpec;
 
 @DisplayName("Resource list data tests")
 public class ResourceListTests extends TestBase {
@@ -23,7 +23,7 @@ public class ResourceListTests extends TestBase {
                         .get("unknown")
 
                         .then()
-                        .spec(code200ResponseSpec)
+                        .spec(statusCodeResponseSpec(200))
                         .extract().as(ResourceListResponseModel.class));
 
         step("Check response", () ->
@@ -39,7 +39,7 @@ public class ResourceListTests extends TestBase {
                         .get("unknown")
 
                         .then()
-                        .spec(code200ResponseSpec)
+                        .spec(statusCodeResponseSpec(200))
                         .extract().as(ResourceListResponseModel.class));
 
         ResourceListData checkedElement = response.getData().get(2);

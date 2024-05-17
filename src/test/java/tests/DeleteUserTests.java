@@ -6,8 +6,8 @@ import org.junit.jupiter.api.Test;
 import static io.qameta.allure.Allure.step;
 import static io.restassured.RestAssured.given;
 import static org.assertj.core.api.Assertions.assertThat;
-import static specs.TestSpecs.code204ResponseSpec;
 import static specs.TestSpecs.requestSpecification;
+import static specs.TestSpecs.statusCodeResponseSpec;
 
 @DisplayName("User deletion tests")
 public class DeleteUserTests extends TestBase {
@@ -20,7 +20,7 @@ public class DeleteUserTests extends TestBase {
                         .delete("users/{id}", 5)
 
                         .then()
-                        .spec(code204ResponseSpec)
+                        .spec(statusCodeResponseSpec(204))
                         .extract().asString());
 
         step("Check response", () ->

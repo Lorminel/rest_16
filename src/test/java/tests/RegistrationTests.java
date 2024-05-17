@@ -9,7 +9,8 @@ import org.junit.jupiter.api.Test;
 import static io.qameta.allure.Allure.step;
 import static io.restassured.RestAssured.given;
 import static org.assertj.core.api.Assertions.assertThat;
-import static specs.TestSpecs.*;
+import static specs.TestSpecs.requestSpecification;
+import static specs.TestSpecs.statusCodeResponseSpec;
 
 @DisplayName("Registration tests")
 public class RegistrationTests extends TestBase {
@@ -29,7 +30,7 @@ public class RegistrationTests extends TestBase {
                         .post("register")
 
                         .then()
-                        .spec(code200ResponseSpec)
+                        .spec(statusCodeResponseSpec(200))
                         .extract().as(RegistrationResponseModel.class));
 
         step("Check response", () -> {
@@ -52,7 +53,7 @@ public class RegistrationTests extends TestBase {
                         .post("register")
 
                         .then()
-                        .spec(code400ResponseSpec)
+                        .spec(statusCodeResponseSpec(400))
                         .extract().as(MissingPasswordResponseModel.class));
 
         step("Check response", () ->

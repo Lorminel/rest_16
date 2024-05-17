@@ -19,27 +19,14 @@ public class TestSpecs {
             .log().headers()
             .contentType(JSON);
 
-    public static ResponseSpecification code201ResponseSpec = new ResponseSpecBuilder()
-            .expectStatusCode(201)
-            .log(STATUS)
-            .log(BODY)
-            .build();
+    public static ResponseSpecification statusCodeResponseSpec(int statusCode) {
 
-    public static ResponseSpecification code200ResponseSpec = new ResponseSpecBuilder()
-            .expectStatusCode(200)
-            .log(STATUS)
-            .log(BODY)
-            .build();
+        ResponseSpecification responseSpecification = new ResponseSpecBuilder()
+                .expectStatusCode(statusCode)
+                .log(STATUS)
+                .log(BODY)
+                .build();
 
-    public static ResponseSpecification code204ResponseSpec = new ResponseSpecBuilder()
-            .expectStatusCode(204)
-            .log(STATUS)
-            .log(BODY)
-            .build();
-
-    public static ResponseSpecification code400ResponseSpec = new ResponseSpecBuilder()
-            .expectStatusCode(400)
-            .log(STATUS)
-            .log(BODY)
-            .build();
+        return responseSpecification;
+    }
 }
